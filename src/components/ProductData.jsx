@@ -1,0 +1,268 @@
+// productdata.jsx
+export const mixedData = [
+    {
+        id: 1,
+        image: '/src/icons&img/tomato.png',
+        title: 'Tomato',
+        description: 'Fresh and juicy tomatoes perfect for cooking.',
+        price: 20,
+    },
+    {
+        id: 2,
+        image: '/src/icons&img/potato.png',
+        title: 'Potato',
+        description: 'High quality potatoes for any dish.',
+        price: 30,
+    },
+    {
+        id: 3,
+        image: '/src/icons&img/carrot.png',
+        title: 'Carrot',
+        description: 'Organic carrots for healthy snacks.',
+        price: 25,
+    },
+    {
+        id: 4,
+        image: '/src/icons&img/onion.png',
+        title: 'Onion',
+        description: 'Fresh onion for salads and more.',
+        price: 35,
+    },
+    {
+        id: 5,
+        image: '/src/icons&img/noodles.png',
+        title: 'Noodles',
+        description: 'Tasty noodles for a satisfying meal.',
+        price: 80,
+    },
+    {
+        id: 6,
+        image: '/src/icons&img/rice.png',
+        title: 'Fried Rice',
+        description: 'Tasty rice for a satisfying meal.',
+        price: 70,
+    },
+    {
+        id: 7,
+        image: '/src/icons&img/biryani.png',
+        title: 'Chicken Biryani',
+        description: 'Tasty chicken biryani for a satisfying meal.',
+        price: 100,
+    },
+    {
+        id: 8,
+        image: '/src/icons&img/sandwitch.png',
+        title: 'sandwich',
+        description: 'Tasty sandwich, for a satisfying meal.',
+        price: 50,
+    },
+    {
+        id: 9,
+        image: '/src/icons&img/milk.png',
+        title: 'Arokya Milk',
+        description: 'Tasty milk, for a satisfying meal.',
+        price: 37,
+    },
+    {
+        id: 10,
+        image: '/src/icons&img/curd.png',
+        title: 'Hutsun Curd',
+        description: 'Tasty curd, for a satisfying meal.',
+        price: 10,
+    },
+    {
+        id: 11,
+        image: '/src/icons&img/maaza.png',
+        title: 'Maaza 1Ltr',
+        description: 'Tasty maaza, for a satisfying meal.',
+        price: 50,
+    },
+    {
+        id: 12,
+        image: '/src/icons&img/sprite.png',
+        title: 'Sprite 500ml',
+        description: 'Tasty sprite, for a satisfying meal.',
+        price: 25,
+    },
+    
+]
+
+export const medicineData = [
+    {
+        id: 1,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 1',
+        description: 'This is the description for product 1.',
+        price: 100,
+    },
+    {
+        id: 2,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 2',
+        description: 'This is the description for product 2.',
+        price: 150,
+    },
+    {
+        id: 3,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 2',
+        description: 'This is the description for product 2.',
+        price: 150,
+    },
+    {
+        id: 4,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 2',
+        description: 'This is the description for product 2.',
+        price: 150,
+    },
+    {
+        id: 5,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 2',
+        description: 'This is the description for product 2.',
+        price: 150,
+    },
+    {
+        id: 6,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 2',
+        description: 'This is the description for product 2.',
+        price: 150,
+    },
+    {
+        id: 7,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 2',
+        description: 'This is the description for product 2.',
+        price: 150,
+    },
+    {
+        id: 8,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 2',
+        description: 'This is the description for product 2.',
+        price: 150,
+    },
+    {
+        id: 9,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 2',
+        description: 'This is the description for product 2.',
+        price: 150,
+    },
+    {
+        id: 10,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 2',
+        description: 'This is the description for product 2.',
+        price: 150,
+    },
+    {
+        id: 11,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 2',
+        description: 'This is the description for product 2.',
+        price: 150,
+    },
+    {
+        id: 12,
+        image: '/src/icons&img/bannerbg.jpg',
+        title: 'Product 2',
+        description: 'This is the description for product 2.',
+        price: 150,
+    },
+    
+    // Add more products as needed
+];
+
+
+export const groceryData = [
+    {
+        id: 1,
+        image: '/src/icons&img/tomato.png',
+        title: 'Tomato',
+        description: 'Fresh and juicy tomatoes perfect for cooking.',
+        price: 20,
+    },
+    {
+        id: 2,
+        image: '/src/icons&img/onion.png',
+        title: 'Onion',
+        description: 'Fresh onion for salads and more.',
+        price: 50,
+    },
+    {
+        id: 3,
+        image: '/src/icons&img/chicken.png',
+        title: 'Chicken',
+        description: 'Chicken for a healthy meal.',
+        price: 150,
+    },
+    {
+        id: 4,
+        image: '/src/icons&img/beef.png',
+        title: 'Beef',
+        description: 'Beef for a hearty meal.',
+        price: 200,
+    },
+    {
+        id: 5,
+        image: '/src/icons&img/salt.png',
+        title: 'Tata Salt 1kg',
+        description: 'Tata salt for all your cooking needs.',
+        price: 100,
+    },
+    {
+        id: 6,
+        image: '/src/icons&img/chillipowder.png',
+        title: 'Achi Chilli Powder 500g',
+        description: 'Achi chilli powder for all your spicy needs.',
+        price: 50,
+    },
+    {
+        id: 7,
+        image: '/src/icons&img/turmeric.png',
+        title: 'Achi turmaric powder 100g',
+        description: 'Achi turmeric powder for all your cooking needs.',
+        price: 50,
+    },
+    {
+        id: 8,
+        image: '/src/icons&img/blackpepper.png',
+        title: 'Black Pepper 100g',
+        description: 'Black pepper for all your cooking needs.',
+        price: 70,
+    },
+    {
+        id: 9,
+        image: '/src/icons&img/kotmir.png',
+        title: 'Kotmir',
+        description: 'Kotmir for all your cooking needs.',
+        price: 10,
+    },
+    {
+        id: 10,
+        image: '/src/icons&img/pudina.png',
+        title: 'Pudhina',
+        description: 'Pudhina for all your cooking needs.',
+        price: 10,
+    },
+    {
+        id: 11,
+        image: '/src/icons&img/aata.png',
+        title: 'Aata',
+        description: 'Aata for all your cooking needs.',
+        price: 50,
+    },
+    {
+        id: 12,
+        image: '/src/icons&img/sugar.png',
+        title: 'Sugar',
+        description: 'Sugar for all your cooking needs.',
+        price: 45,
+    },
+
+    // Add more products as needed
+];
+
