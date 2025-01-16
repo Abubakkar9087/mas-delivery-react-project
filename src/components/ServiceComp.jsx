@@ -138,16 +138,16 @@ function ServiceComp() {
     );
   }, []);
   const categories = [
-    {image:'/src/icons&img/medicineIcon.png', title: "Medicine", details: "medicine-type" },
-    {image:'/src/icons&img/grocery.png', title: "Groceries", details: "Fresh. Organic. Local." },
-    {image:'/src/icons&img/food.png', title: "Food", details: "All type of food" },
-    {image:'/src/icons&img/electronics.png', title: "Electronics", details: "Latest, Durable, Affordable." },
-    {image:'/src/icons&img/clothing.png', title: "Clothing", details: "Stylish, Comfortable, Affordable." },
-    {image:'/src/icons&img/sports.png', title: "Sports", details: "Durable, High-Performance, Affordable." },
-    {image:'/src/icons&img/books.png', title: "Books", details: "Informative, Inspiring, Educational." },
-    {image:'/src/icons&img/home.png', title: "Home Appliances", details: "Modern. Powerful. Efficient." },
-    {image:'/src/icons&img/toys.png', title: "Toys", details: "Fun. Safe. Educational." },
-    {image:'/src/icons&img/beauty.png', title: "Beauty Products", details: "Skincare. Fragrances. Makeup." },
+    {image:'/public/medicineIcon.png', title: "Medicine", details: "medicine-type" },
+    {image:'/public/grocery.png', title: "Groceries", details: "Fresh. Organic. Local." },
+    {image:'/public/food.png', title: "Food", details: "All type of food" },
+    {image:'/public/electronics.png', title: "Electronics", details: "Latest, Durable, Affordable." },
+    {image:'/public/clothing.png', title: "Clothing", details: "Stylish, Comfortable, Affordable." },
+    {image:'/public/sports.png', title: "Sports", details: "Durable, High-Performance, Affordable." },
+    {image:'/public/books.png', title: "Books", details: "Informative, Inspiring, Educational." },
+    {image:'/public/home.png', title: "Home Appliances", details: "Modern. Powerful. Efficient." },
+    {image:'/public/toys.png', title: "Toys", details: "Fun. Safe. Educational." },
+    {image:'/public/beauty.png', title: "Beauty Products", details: "Skincare. Fragrances. Makeup." },
   ];
 
   return (
@@ -155,28 +155,28 @@ function ServiceComp() {
       <section className="service">
         <div className="service-card">
           <div className="cards">
-            <img src="\src\icons&img\fastdelivery.jpg" alt="service-icon" />
+            <img src="/public/fastdelivery.jpg" alt="service-icon" />
             <div className="card">
               <h4>Fast Delivery</h4>
               <p>On time delivery</p>
             </div>
           </div>
           <div className="cards">
-            <img src="\src\icons&img\payment.jpg" alt="service-icon" />
+            <img src="/public/payment.jpg" alt="service-icon" />
             <div className="card">
               <h4>Secure Payment</h4>
               <p>We ensure secure payment</p>
             </div>
           </div>
           <div className="cards">
-            <img src="\src\icons&img\moneyback.png" alt="service-icon" />
+            <img src="/public/moneyback.png" alt="service-icon" />
             <div className="card">
               <h4>100% Money Back</h4>
               <p>30 days return policy</p>
             </div>
           </div>
           <div className="cards">
-            <img src="\src\icons&img\customersupport.png" alt="service-icon" />
+            <img src="/public/customersupport.png" alt="service-icon" />
             <div className="card">
               <h4>Online Support</h4>
               <p>24/7 online support</p>
@@ -199,7 +199,7 @@ function ServiceComp() {
             </div>
           </div>
           {/* <div className="left-arrow" onClick={scrollRight}>
-              <img src="\src\icons&img\rightarrow.svg" alt="" />
+              <img src="/public/rightarrow.svg" alt="" />
             </div> */}
         </div>
       </section>

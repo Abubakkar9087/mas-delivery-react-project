@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Navbar from './Navbar';
-import PageBanner from './PageBanner';
-import Footer from './Footer';
-import Testimonial from './Testimonial';
+
 
 const Wrapper = styled.section`
 .ContactForm{
@@ -83,7 +80,7 @@ function Contacts() {
         <h2>Get in Touch</h2>
         <div className="ContactForm">
             <div className="contact">
-                <img src="\src\icons&img\contact.png" alt="" />
+                <img src="/public/contact.png" alt="" />
             </div>
             <div className="contact">
              <form action="">

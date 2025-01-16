@@ -317,15 +317,15 @@ function Navbar() {
       {/* Top bar with location, phone, and email */}
       <div className="nav details">
         <span className="details-content">
-          <img src="/src/icons&img/location.svg" alt="location" />
+          <img src="/public/location.svg" alt="location" />
           <p>Pernambut, Vellore, Tamil Nadu - 635810</p>
         </span>
         <span className="details-content">
-          <img src="/src/icons&img/phone.svg" alt="phone" />
+          <img src="/public/phone.svg" alt="phone" />
           <p>+91 9087690361</p>
         </span>
         <span className="details-content">
-          <img src="/src/icons&img/mail.svg" alt="mail" />
+          <img src="/public/mail.svg" alt="mail" />
           <p>masinfotechservice@gmail.com</p>
         </span>
       </div>
@@ -333,7 +333,7 @@ function Navbar() {
       {/* Navbar */}
       <div className="nav nav-bar">
         <ul className="logo">
-          <img src="/src/icons&img/logo.png" alt="logo" />
+          <img src="/public/logo.png" alt="logo" />
         </ul>
         <ul className="nav-links">
           <Link to="/"><li>Home</li></Link>
@@ -347,7 +347,7 @@ function Navbar() {
         <ul className="carts">
           <div className="cart" onClick={handleCartToggle}>
             <span>{cartItems.length}</span>
-            <img src="/src/icons&img/cart.svg" alt="cart" />
+            <img src="/public/cart.svg" alt="cart" />
           </div>
         </ul>
       </div>
@@ -403,31 +403,31 @@ function Navbar() {
       <div className="navbar-icons">
         <Link to="/">
           <div className="icon-img">
-            <img src="/src/icons&img/home.svg" alt="icon" />
+            <img src="/public/home.svg" alt="icon" />
             <p>Home</p>
           </div>
         </Link>
         <Link to="/shop">
           <div className="icon-img">
-            <img src="/src/icons&img/shop.svg" alt="icon" />
+            <img src="/public/shop.svg" alt="icon" />
             <p>Shop</p>
           </div>
         </Link>
         <Link to="/services">
           <div className="icon-img">
-            <img src="/src/icons&img/service.svg" alt="icon" />
+            <img src="/public/service.svg" alt="icon" />
             <p>Services</p>
           </div>
         </Link>
         <Link to="/contact">
           <div className="icon-img">
-            <img src="/src/icons&img/contact.svg" alt="icon" />
+            <img src="/public/contact.svg" alt="icon" />
             <p>Contact</p>
           </div>
         </Link>
         <Link to="/form">
           <div className="icon-img">
-            <img src="/src/icons&img/login.svg" alt="icon" />
+            <img src="/public/login.svg" alt="icon" />
             <p>Login</p>
           </div>
         </Link>

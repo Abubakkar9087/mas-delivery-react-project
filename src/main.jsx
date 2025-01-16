@@ -12,6 +12,7 @@ import Contact from "./components/Contact";
 import Checkout from "./components/Checkout";
 import Login from "./components/Login";
 
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
   <Provider store={store}>
