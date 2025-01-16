@@ -156,7 +156,7 @@ function Services() {
       <Navbar />
       <PageBanner />
       <div className="services">
-        <img src="/public/services.png" alt="service" />
+        <img src="./services.png" alt="service" />
         <div className="services-content">
           <h2>Our Services</h2>
           <p>At MAS Delivery, we are committed to making your life easier by offering a wide range of services to cater to all your daily needs. With a focus on convenience, quality, and efficiency, we ensure a seamless delivery experience every time.</p>

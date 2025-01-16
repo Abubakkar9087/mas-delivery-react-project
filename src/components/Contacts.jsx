@@ -80,7 +80,7 @@ function Contacts() {
         <h2>Get in Touch</h2>
         <div className="ContactForm">
             <div className="contact">
-                <img src="/public/contact.png" alt="" />
+                <img src="./contact.png" alt="" />
             </div>
             <div className="contact">
              <form action="">

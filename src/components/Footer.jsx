@@ -207,7 +207,7 @@ function Footer() {
       <div className="footer-cards">
         <div className="footer-card">
           <span>
-            <img src="/public/logo.png" alt="logo" />
+            <img src="./logo.png" alt="logo" />
             <h5>
               Welcome to MAS Delivery, your one-stop solution for all your needs! From groceries and gadgets to everyday essentials, we bring a wide range of products to your doorstep with speed and reliability. Experience hassle-free shopping and seamless delivery, all in one place.
             </h5>
@@ -241,22 +241,22 @@ function Footer() {
             <ul>
               <li clssName="social-icons">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/public/youtube.svg" alt="" className='social-img'/>
+                  <img src="./youtube.svg" alt="" className='social-img'/>
                 </a>
               </li>
               <li clssName="social-icons">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/public/instagram.svg" alt="" className='social-img'/>
+                  <img src="./instagram.svg" alt="" className='social-img'/>
                 </a>
               </li>
               <li clssName="social-icons">
                 <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                <img src="/public/facebook.svg" alt="" className='social-img'/>
+                <img src="./facebook.svg" alt="" className='social-img'/>
                 </a>
               </li>
               <li clssName="social-icons">
                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                <img src="/public/twitter.svg" alt="" className='social-img'/>
+                <img src="./twitter.svg" alt="" className='social-img'/>
                 </a>
               </li>
             </ul>

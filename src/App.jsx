@@ -21,7 +21,7 @@ function App() {
       {/* <PageBanner/> */}
       {/* banner start */}
       <section className="banner">
-        <video src="/public/bannerbg.mp4" autoPlay loop muted></video>
+        <video src="./bannerbg.mp4" autoPlay loop muted></video>
         <h1>Welcome to MAS Delivery</h1>
         <p>Buy Anything You Want</p>
         <Link to='/shop' >
