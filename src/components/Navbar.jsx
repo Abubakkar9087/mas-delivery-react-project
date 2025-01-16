@@ -264,6 +264,7 @@ const Wrapper = styled.section`
       .navbar-icons{
       display: flex;
       }
+
   }
       @media screen and (max-width: 470px) {
         .navbar-icons{

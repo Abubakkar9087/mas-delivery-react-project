@@ -162,6 +162,7 @@ const Wrapper = styled.section`
         flex-wrap: wrap;
         gap: 20px;
         list-style: none;
+        margin-bottom: 30px;
         
         li{
           background: white;
@@ -198,6 +199,7 @@ const Wrapper = styled.section`
       .footer card span{
         margin-bottom: 50px;
       }
+        
 }
 `;
 
