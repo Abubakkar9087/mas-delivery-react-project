@@ -68,6 +68,7 @@ const Wrapper = styled.section`
     left: 50%;
     transform: translate(-50%, -50%);
     flex-direction: column;
+    z-index: 10;
   }
   .buy-modal {
     display: flex;
