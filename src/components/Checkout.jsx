@@ -17,7 +17,7 @@ align-items: start;
 gap: 20px;
 padding: 10px;
 }
-.cart-page, .checkout-page {
+.checkout-page {
     max-width: 600px;
     max-height: 700px;
     width: 100%;
