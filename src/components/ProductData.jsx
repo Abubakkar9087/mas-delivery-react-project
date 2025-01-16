@@ -2,7 +2,7 @@
 export const mixedData = [
     {
         id: 1,
-        image: '/public/tomato.png',
+        image: './public/tomato.png',
         title: 'Tomato',
         description: 'Fresh and juicy tomatoes perfect for cooking.',
         price: 20,
