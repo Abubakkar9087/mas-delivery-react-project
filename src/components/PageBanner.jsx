@@ -13,12 +13,22 @@ const Wrapper = styled.section`
   flex-direction: column;
   border: 1px solid rgb(0 0 75);
   position: relative;
+  background-image: url("./pagebanner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow:inset 0px 0px 0px 100rem #0000008a;
+  
 
 
   p{
     padding: 10px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px black;
   }
 
 }

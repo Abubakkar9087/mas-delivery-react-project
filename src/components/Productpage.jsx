@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { mixedData, groceryData, medicineData } from "./ProductData";
+import { mixedData, groceryData, medicineData, foodData, electronicsData } from "./ProductData";
 import styled from "styled-components";
 import { addToCart, updateCartQuantity } from "../components/cartSlice"; // Import necessary actions
 
@@ -229,6 +229,8 @@ function Productpages() {
         ? groceryData
         : categories === "electronics"
           ? electronicsData
+          : categories === "food"
+          ? foodData
           : mixedData;
 
   // Filter products based on the search term
