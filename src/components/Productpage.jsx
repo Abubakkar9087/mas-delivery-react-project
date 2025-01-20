@@ -302,7 +302,7 @@ function Productpages() {
             <div className="buy-modal">
               <span className="modal-header">
                 <h2>Product Buy</h2>
-                <p onClick={() => setBuyModal(false)} className="close-button">x</p>
+                <p onClick={() => setBuyModal(false)} className="close-button" title="Close">x</p>
               </span>
             </div>
             <div className="buy-modal">
