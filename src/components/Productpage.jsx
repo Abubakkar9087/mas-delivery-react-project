@@ -29,19 +29,20 @@ const Wrapper = styled.section`
 
     &:hover {
       box-shadow: 0 0px 8px #000000b8;
-      transform: scale(1.03);
+      transform: scale(1.02);
       }
 }
   }
   .product-card img {
-        width: 100%;
-    min-height: 150px;
-    max-height: 150px;
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
     border-radius: 10px 10px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: contain;
+    background: #0d1b2a14;
   }
   .product-body {
     gap: 0px;
@@ -61,7 +62,6 @@ const Wrapper = styled.section`
     }
 
   .product-btn {
-    padding: 5px 10px;
     gap: 10px;
     display: flex;
   }
@@ -158,7 +158,6 @@ const Wrapper = styled.section`
   }
   button {
     background-color: #0d1b2a;
-    border: none;
     color: white;
     padding: 5px 10px;
     text-align: center;
@@ -169,13 +168,13 @@ const Wrapper = styled.section`
     cursor: pointer;
     border-radius: 20px;
     transition: 0.3s ease-in-out;
-    border: 2px solid #0d1b2a;
-    font-weight: 700;
+    border: 1px solid #0d1b2a;
+    font-weight: 500;
   }
   button:hover {
     background-color: white;
-    color: #0d1b2a;
-    border: 2px solid #0d1b2a;
+    color:#0d1b2a;
+    border: 1px solid #0d1b2a;
   }
 .quantity{
 width: 40px;
@@ -279,6 +278,7 @@ function Productpage() {
     }
     alert(product.title + ' ' + "added to cart!");
   };
+  
 
   return (
     <Wrapper>
@@ -300,6 +300,7 @@ function Productpage() {
               <NoData/>
             :
             filteredProducts.map((product) => (
+              
               <div className="product-card" key={product.id}>
                 <img src={product.image} alt={`${product.title} image`} />
                 <div className="product-body">

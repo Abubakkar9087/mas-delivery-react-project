@@ -110,7 +110,6 @@ width: 100%;
   text-align: start;
 }
 
-
 `;
 
 function Services() {
@@ -185,6 +184,7 @@ function Services() {
           ))}
         </div>
       </div>
+      
       <Footer />
     </Wrapper>
   )

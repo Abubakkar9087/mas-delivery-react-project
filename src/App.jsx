@@ -22,7 +22,7 @@ function App() {
       <section className="banner">
         <video src="./bannerbg.mp4" autoPlay loop muted></video>
         <h1>Welcome to MAS Delivery</h1>
-        <p>Buy Anything You Want</p>
+        <p className="home-details">From bike taxis to groceries, rations, food, fuel, medicines, electronics, and even pampers for children – we deliver sab kuch!</p>
         <Link to='/shop' >
         <button id="shopnow"> Shop Now</button>
         </Link>

@@ -33,17 +33,16 @@ const Wrapper = styled.section`
   padding: 10px;
 }
 .cards{
-  border: 1px solid #ccc;
   padding: 10px;
-  border-radius: 10px;
-  min-width: 300px;
-  width: 300px;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background: #e0e1dd;
+    border-radius: 10px;
+    min-width: 300px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #e5e5e542;
 }
   .cards img{
     width: 80px;  
@@ -58,7 +57,7 @@ const Wrapper = styled.section`
   overflow: hidden; /* Hide overflow for seamless scrolling */
   width: 100%; /* Full-width */
   position: relative;
-  max-width: 1300px;
+  max-width: 1250px;
   margin-bottom: 10px;
 }
 
@@ -74,21 +73,24 @@ const Wrapper = styled.section`
 .scroll-card {
   border: 1px solid #ccc;
   padding: 10px;
-  border-radius: 10px;
-  min-width: 250px;
-  max-width: 250px;
-  height: 100px;
+  border-radius: 5px;
+  min-width: 300px;
+  max-width: 300px;
+  height: 200px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background: #e0e1dd;
+  position: relative;
+  box-shadow:inset 0 0px 0px 100rem  #0000005c;
+  cursor: auto;
 }
 .scroll-card img {
-  width: 80px;  
-    height: 80px;
-    object-fit: contain;
-    border-radius: 50%;
+position: absolute;
+  width: 100%;  
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
     .scrollcard-content{
     width: 100%;
@@ -97,16 +99,166 @@ const Wrapper = styled.section`
     align-items: center;
     flex-direction: column;
     text-wrap: auto;
+    color: white;
     }
 .scroll-card h3 {
-  font-size: 100%;
+  font-size: 2em;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: white;
+  cursor: context-menu; 
 }
   h2{
   margin-bottom: 20px;
   }
+  .service-items{
+  width: 100%;
+  max-width: 1250px;
+  min-height: 430px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  }
+  .service-item{
+  width: 600px;
+  min-height: 480px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 11px; 
+  }
+  .chat{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+  background:linear-gradient(311deg, #01654d, #018e6b);
+  
+  }
 
+  .service-item1{
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  position: relative;
+  
+  }
+  .service-item2{
+  width: 100%;
+  background: linear-gradient(40deg, #ceceff, #5ac3e3);
+  background-image: url(./offerbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+    border-radius: 11px; 
+    position: relative;
+
+  }
+  .service-item-1{
+  width: 280px;
+  background: orange;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+    border-radius: 11px; 
+
+  }
+  .service-item-2{
+  width: 280px;
+  background: orange;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+    border-radius: 11px; 
+    position: relative;
+
+  }
+  .service-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 10px; 
+  }  
+  .service-item2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  }  
+  .service-item-1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  }  
+  .service-item-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  }  
+    .service-item-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    box-shadow: inset 0 0 0 100rem #0000008a;
+  position: absolute;
+  color: white;
+  flex-direction: column;
+
+
+  a{
+  text-decoration: none;
+  color: white;
+  }
+  }
+  .service-item-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  }
+  button{
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid #0d1b2a;
+    color: white;
+    background: #0d1b2a;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: .3s ease-in-out;
+    margin-top: 10px;
+
+    &:hover{
+    background: white;
+    color: #0d1b2a;
+    }
+}
+  
 /* service end */
 `;
 
@@ -134,23 +286,23 @@ function ServiceComp() {
       { x: 0 },
       {
         x: -totalWidth,
-        duration: 30, // Adjust speed
+        duration: 60, // Adjust speed
         ease: "none", // Linear motion for smooth scrolling
         repeat: -1, // Infinite loop
       }
     );
   }, []);
   const categories = [
-    {image:'./medicineIcon.png', title: "Medicine", details: "medicine-type" },
-    {image:'./grocery.png', title: "Groceries", details: "Fresh. Organic. Local." },
-    {image:'./food.png', title: "Food", details: "All type of food" },
-    {image:'./electronics.png', title: "Electronics", details: "Latest, Durable, Affordable." },
-    {image:'./clothing.png', title: "Clothing", details: "Stylish, Comfortable, Affordable." },
-    {image:'./sports.png', title: "Sports", details: "Durable, High-Performance, Affordable." },
-    {image:'./books.png', title: "Books", details: "Informative, Inspiring, Educational." },
-    {image:'./home.png', title: "Home Appliances", details: "Modern. Powerful. Efficient." },
-    {image:'./toys.png', title: "Toys", details: "Fun. Safe. Educational." },
-    {image:'./beauty.png', title: "Beauty Products", details: "Skincare. Fragrances. Makeup." },
+    { image: './medicineIcon.png', title: "Medicine" },
+    { image: './grocery.png', title: "Groceries" },
+    { image: './food.png', title: "Food" },
+    { image: './electronics.png', title: "Electronical" },
+    { image: './clothing.png', title: "Clothing" },
+    { image: './sports.png', title: "Sports" },
+    { image: './bike-taxi.jpg', title: "Bike Taxi" },
+    { image: './books.png', title: "Stationary" },
+    { image: './c2c.png', title: "Product Delivery" },
+    { image: './beauty.png', title: "Beauty Products" },
   ];
 
   return (
@@ -186,16 +338,52 @@ function ServiceComp() {
             </div>
           </div>
         </div>
+
+        <div className="service-items">
+          <div className="service-item chat">
+            <img src="./chat.png" alt="error" />
+            <div className="service-item-content">
+              <h1>Send Your Product List On Whatsapp</h1>
+              <p>Place Order Through Whatsapp. </p>
+              <a href="https://wa.me/+919087690361"><button>Place Order</button></a>
+            </div>
+          </div>
+          <div className="service-item">
+            <div className="service-item1">
+              <div className="service-item-1">
+                <img src="./phone-call.jpg" alt="error" />
+                <div className="service-item-content">
+              <h1>Call Support</h1>
+              <p>Place Order Through Phone Call</p>
+              <a href="+919087690361"><button>Place Order</button></a>
+            </div> 
+              </div>
+              <div className="service-item-2">
+                <img src="./discound.png" alt="error" />
+                <div className="service-item-content">
+              <h1>50% Discount</h1>
+              <p>Get 50% Delivery fee off on your 11th order</p>
+            </div>
+              </div>
+            </div>
+            <div className="service-item2">
+              <img src="./offer.png" alt="error" />
+              <div className="service-item-content">
+              <h1>Chat Support</h1>
+            </div>              
+            </div>
+          </div>
+        </div>
+
         <div className="category">
-          <h2>Category</h2>
+          <h2>What We Deliver</h2>
           <div className="scrolling-container">
             <div className="services-scroll" ref={containerRef}>
               {categories.map((service, index) => (
                 <div className="scroll-card" key={index}>
                   <img src={service.image} alt="service-icon" />
                   <div className="scrollcard-content">
-                  <h3>{service.title}</h3>
-                  <p>{service.details}</p>
+                    <h3>{service.title}</h3>
                   </div>
                 </div>
               ))}

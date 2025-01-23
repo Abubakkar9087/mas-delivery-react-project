@@ -20,27 +20,32 @@ const Wrapper = styled.section`
   display: flex;
   gap: 1rem;
   white-space: nowrap; 
+  padding:10px;
   width: max-content; /* Ensure it expands for all cards */
 }
 
   .card {
-    border: 1px solid #000075;
+    // border: 1px solid #0d1b2a99;
     padding: 10px;
-    border-radius: 10px;
-    max-width: 500px;
-    height: auto;
+    border-radius: 5px;
+    max-width: 300px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #ededff;
+    background-color: white;
     gap: 10px;
+    text-align: start;
+    box-shadow: 0px 0px 10px #00000080;
   }
     .card .description{
+    text-align: start;
     text-wrap: auto;
     font-weight: lighter;
     }
     .card p{
+    text-align: start;
     text-wrap: auto;
     }
   h2{
