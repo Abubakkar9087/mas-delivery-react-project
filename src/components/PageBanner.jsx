@@ -18,7 +18,6 @@ const Wrapper = styled.section`
   background-position: center;
   background-repeat: no-repeat;
   box-shadow:inset 0px 0px 0px 100rem #0000008a;
-  
 
 
   p{
@@ -34,6 +33,7 @@ const Wrapper = styled.section`
 }
 
 /* banner end */`;
+
 
 function PageBanner() {
   return (

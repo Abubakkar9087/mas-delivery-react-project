@@ -17,13 +17,14 @@ const Wrapper = styled.section`
     align-items: center;
     padding: 10px;
     color: white;
-    position: relative;
-  }
 
-  .nav-bar {
-    position: sticky;
-    top: 10px;
   }
+.navbar{
+width: 100%;
+// position: fixed;
+// top: 0;
+// z-index: 10;
+}
 
   .details {
     display: flex;
@@ -316,41 +317,43 @@ function Navbar() {
   return (
     <Wrapper>
       {/* Top bar with location, phone, and email */}
-      <div className="nav details">
-        <span className="details-content">
-          <img src="./location.svg" alt="location" />
-          <p>Pernambut, Vellore, Tamil Nadu - 635810</p>
-        </span>
-        <span className="details-content">
-          <img src="./phone.svg" alt="phone" />
-          <p>+91 9087690361</p>
-        </span>
-        <span className="details-content">
-          <img src="./mail.svg" alt="mail" />
-          <p>masinfotechservice@gmail.com</p>
-        </span>
-      </div>
+      <div className="navbar">
+        <div className="nav details">
+          <span className="details-content">
+            <img src="./location.svg" alt="location" />
+            <p>Pernambut, Vellore, Tamil Nadu - 635810</p>
+          </span>
+          <span className="details-content">
+            <img src="./phone.svg" alt="phone" />
+            <p><a href="+919087690361">+91 9087690361</a></p>
+          </span>
+          <span className="details-content">
+            <img src="./mail.svg" alt="mail" />
+            <p>masinfotechservice@gmail.com</p>
+          </span>
+        </div>
 
-      {/* Navbar */}
-      <div className="nav nav-bar">
-        <ul className="logo">
-          <img src="./logo.png" alt="logo" />
-        </ul>
-        <ul className="nav-links">
-          <Link to="/"><li>Home</li></Link>
-          <Link to="/shop"><li>Shop</li></Link>
-          <Link to="/services"><li>Service</li></Link>
-          <Link to="/contact"><li>Contact</li></Link>
-          <Link to="/form"><li>Login / Signup</li></Link>
-        </ul>
+        {/* Navbar */}
+        <div className="nav nav-bar">
+          <ul className="logo">
+            <img src="./logo.png" alt="logo" />
+          </ul>
+          <ul className="nav-links">
+            <Link to="/"><li>Home</li></Link>
+            <Link to="/shop"><li>Shop</li></Link>
+            <Link to="/services"><li>Service</li></Link>
+            <Link to="/contact"><li>Contact</li></Link>
+            <Link to="/form"><li>Login / Signup</li></Link>
+          </ul>
 
-        {/* Cart */}
-        <ul className="carts">
-          <div className="cart" onClick={handleCartToggle}>
-            <span>{cartItems.length}</span>
-            <img src="./cart.svg" alt="cart" />
-          </div>
-        </ul>
+          {/* Cart */}
+          <ul className="carts">
+            <div className="cart" onClick={handleCartToggle}>
+              <span>{cartItems.length}</span>
+              <img src="./cart.svg" alt="cart" />
+            </div>
+          </ul>
+        </div>
       </div>
 
       {/* Cart Page */}

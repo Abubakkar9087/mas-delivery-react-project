@@ -242,22 +242,22 @@ function Footer() {
           <span className="social-media">
             <ul>
               <li clssName="social-icons">
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/channel/UChfILI6MZH7VABereEFxCzg" target="_blank" rel="noopener noreferrer">
                   <img src="./youtube.svg" alt="" className='social-img'/>
                 </a>
               </li>
               <li clssName="social-icons">
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/abubakkar90_61/" target="_blank" rel="noopener noreferrer">
                   <img src="./instagram.svg" alt="" className='social-img'/>
                 </a>
               </li>
               <li clssName="social-icons">
-                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/profile.php?id=100062197484759" target="_blank" rel="noopener noreferrer">
                 <img src="./facebook.svg" alt="" className='social-img'/>
                 </a>
               </li>
               <li clssName="social-icons">
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/AbubakkarS95064" target="_blank" rel="noopener noreferrer">
                 <img src="./twitter.svg" alt="" className='social-img'/>
                 </a>
               </li>

@@ -43,7 +43,10 @@ const Wrapper = styled.section`
     .card p{
     text-wrap: auto;
     }
-
+  h2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
   
     
 `;

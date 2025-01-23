@@ -73,6 +73,10 @@ width: 100%;
     background: white;
     color: #0d1b2a;
     }
+    h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
     `;
 function Contacts() {
   return (

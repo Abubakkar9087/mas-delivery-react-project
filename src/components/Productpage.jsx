@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { mixedData, groceryData, medicineData, foodData, electronicsData } from "./ProductData";
 import styled from "styled-components";
 import { addToCart, updateCartQuantity } from "../components/cartSlice"; // Import necessary actions
+import NoData from "./NoData";
 
 const Wrapper = styled.section`
   .product-cards {
@@ -15,14 +16,21 @@ const Wrapper = styled.section`
     padding: 10px;
   }
   .product-card {
-        border: 6px solid #D8C4B6;
     border-radius: 10px;
+    background: #fff;
     width: 200px;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 0px 4px #00000080;
+    transition: .3s ease-in;
+
+    &:hover {
+      box-shadow: 0 0px 8px #000000b8;
+      transform: scale(1.03);
+      }
 }
   }
   .product-card img {
@@ -41,7 +49,6 @@ const Wrapper = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #D8C4B6;
     width: 100%;
     height: 125px;
     transition: 0.3s ease-in-out;
@@ -181,6 +188,7 @@ justify-content: center;
 flex-wrap: wrap;
 gap: 10px;
 align-items: center;
+    margin-bottom: 20px;
 }
   select,input {
     color: #0d1b2a;
@@ -193,6 +201,10 @@ align-items: center;
     outline: none;
     transition: 0.2s ease-in-out;
   }
+    h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
 
   @media screen and (max-width: 1319px) {
     .product-cards {
@@ -207,7 +219,7 @@ align-items: center;
     }
 `;
 
-function Productpages() {
+function Productpage() {
   const [categories, setCategory] = useState("");
   const [buyModal, setBuyModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -230,13 +242,14 @@ function Productpages() {
         : categories === "electronics"
           ? electronicsData
           : categories === "food"
-          ? foodData
-          : mixedData;
+            ? foodData
+            : mixedData;
 
   // Filter products based on the search term
   const filteredProducts = productData.filter((product) =>
     product.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
 
   const openModal = (product) => {
     setSelectedProduct(product);
@@ -264,7 +277,7 @@ function Productpages() {
       // Add product to cart with initial quantity
       dispatch(addToCart({ ...product, quantity: 1 }));
     }
-    alert(product.title +' '+ "added to cart!");
+    alert(product.title + ' ' + "added to cart!");
   };
 
   return (
@@ -282,21 +295,26 @@ function Productpages() {
         <input type="search" value={searchTerm} onChange={handleSearch} placeholder="Search" />
       </div>
       <div className="product-cards">
-        {filteredProducts.map((product) => (
-          <div className="product-card" key={product.id}>
-            <img src={product.image} alt={`${product.title} image`} />
-            <div className="product-body">
-              <h2>{product.title}</h2>
-              <p>Price: ₹{product.price}</p>
-              <div className="product-btn">
-                <button id="buynow" onClick={() => openModal(product)}>
-                  Buy Now
-                </button>
-                <button onClick={() => handleAddToCart(product)}>Cart</button>
+        {
+          filteredProducts.length === 0 ?
+              <NoData/>
+            :
+            filteredProducts.map((product) => (
+              <div className="product-card" key={product.id}>
+                <img src={product.image} alt={`${product.title} image`} />
+                <div className="product-body">
+                  <h2>{product.title}</h2>
+                  <p>Price: ₹{product.price}</p>
+                  <div className="product-btn">
+                    <button id="buynow" onClick={() => openModal(product)}>
+                      Buy Now
+                    </button>
+                    <button onClick={() => handleAddToCart(product)}>Cart</button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        ))}
+            ))
+        }
         {buyModal && selectedProduct && (
           <div className="buy-modals">
             <div className="buy-modal">
@@ -356,4 +374,4 @@ function Productpages() {
 }
 
 
-export default Productpages;
+export default Productpage;

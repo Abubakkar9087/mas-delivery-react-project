@@ -103,6 +103,9 @@ const Wrapper = styled.section`
   margin-bottom: 0.5rem;
   color: #333;
 }
+  h2{
+  margin-bottom: 20px;
+  }
 
 /* service end */
 `;
@@ -184,7 +187,7 @@ function ServiceComp() {
           </div>
         </div>
         <div className="category">
-          <h3>Category</h3>
+          <h2>Category</h2>
           <div className="scrolling-container">
             <div className="services-scroll" ref={containerRef}>
               {categories.map((service, index) => (

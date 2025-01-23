@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import Productpage from "./components/Productpage";
 import ServiceComp from "./components/ServiceComp";
 import { Link } from "react-router-dom";
-import Services from "./components/Services";
 import Service from "./components/Service";
 import Contacts from "./components/Contacts";
 
