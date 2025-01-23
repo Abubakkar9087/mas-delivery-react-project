@@ -171,7 +171,7 @@ position: absolute;
 
   }
   .service-item-1{
-  flex: 1;
+  width: 280px;
   background: orange;
   height: 200px;
   display: flex;
@@ -183,7 +183,7 @@ position: absolute;
 
   }
   .service-item-2{
-  flex: 1;
+  width: 280px;
   background: orange;
   height: 200px;
   display: flex;
@@ -257,6 +257,15 @@ position: absolute;
     background: white;
     color: #0d1b2a;
     }
+}
+
+@media screen and (max-width: 619px) {
+  .service-item-1{
+  width: 100%;
+  }
+  .service-item-2{
+  width: 100%;
+  }
 }
   
 /* service end */
