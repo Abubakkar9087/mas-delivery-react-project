@@ -355,7 +355,7 @@ function ServiceComp() {
                 <div className="service-item-content">
               <h1>Call Support</h1>
               <p>Place Order Through Phone Call</p>
-              <a href="+919087690361"><button>Place Order</button></a>
+              <a href="tel:+919087690361"><button>Place Order</button></a>
             </div> 
               </div>
               <div className="service-item-2">
