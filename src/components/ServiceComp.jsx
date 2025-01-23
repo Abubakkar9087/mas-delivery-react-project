@@ -171,7 +171,7 @@ position: absolute;
 
   }
   .service-item-1{
-  width: 280px;
+  flex: 1;
   background: orange;
   height: 200px;
   display: flex;
@@ -183,7 +183,7 @@ position: absolute;
 
   }
   .service-item-2{
-  width: 280px;
+  flex: 1;
   background: orange;
   height: 200px;
   display: flex;
